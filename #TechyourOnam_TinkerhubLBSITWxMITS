@@ -1,0 +1,37 @@
+#outer_circle
+c = circle(stroke="#FF6200",r=149,fill="green",stroke_width=2)
+show(c)
+
+#inner_circle
+c2=circle(r=144,fill="#FF8000",stroke="none")
+show(c2)
+
+#sqr
+s1=rectangle(w=200,h=200,fill="green",stroke="#B50003",)| repeat(20,rotate(20))
+s2=rectangle(w=190,h=190,fill="yellow",stroke="none",) |repeat(20,rotate(20))
+show(s1,s2)
+
+c3=circle(r=115,fill="green",stroke="green")
+show(c3)
+
+#inner_sqr
+s3=rectangle(w=160,h=160,fill="maroon" ,stroke="none") | repeat(6,rotate(30))
+s4=rectangle(w=140,h=140,fill="brown",stroke="none") | repeat(6,rotate(30))
+s5=rectangle(w=120,h=120,fill="red",stroke="none") | repeat(6,rotate(30))
+s6=rectangle(w=100,h=100,fill="orange",stroke="none") | repeat(6,rotate(30))
+show(s3,s4,s5,s6)
+
+
+
+#center
+e1=ellipse(w=20,h=20,x=40,y=0,stroke="yellow",stroke_width=10,fill="yellow") | repeat(20, rotate(30))
+show(e1)
+e2=ellipse(h=10, w=6, fill="brown", stroke="orange", stroke_width=2)
+e3 = e2 | translate(x=45) | repeat(25, rotate(36))
+show(e3 | repeat(16, rotate(9) | scale(0.9)))
+c4=circle(r=25,fill="brown",stroke="brown")
+c5=circle(r=20,fill="red",stroke="red")
+c6=circle(r=15,fill="orange",stroke="orange")
+c7=circle(r=10,fill="yellow",stroke="yellow")
+c8=circle(r=5,fill="grey",stroke="grey")
+show(c4,c5,c6,c7,c8)
